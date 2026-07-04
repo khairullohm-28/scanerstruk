@@ -48,7 +48,8 @@ sendBtn.addEventListener('click', async () => {
             };
 
             try {
-                const response = await fetch(https://script.google.com/macros/s/AKfycbxIYfupSS1LyrzBa6_NViZhaxmUZ_SRbqNwyIgb9NtewPu5SnsAymiI8rX4YSGk5V1ZtA/exec, {
+                // PERBAIKAN: Menambahkan tanda kutip pada URL
+                const response = await fetch('https://script.google.com/macros/s/AKfycbxIYfupSS1LyrzBa6_NViZhaxmUZ_SRbqNwyIgb9NtewPu5SnsAymiI8rX4YSGk5V1ZtA/exec', {
                     method: 'POST',
                     headers: { 'Content-Type': 'text/plain;charset=utf-8' },
                     body: JSON.stringify(payload)
